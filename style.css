@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size:  14px;
+}
+body {
+
+  background-color: rgb(150, 12, 12);
+  margin: 0;
+  padding: 0;
+}
+.instbuguer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.instbuguer-burguer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.instbuguer-burguer img {
+  height: 60rem;
+}
+.instbuguer-continue {
+  display: flex;
+  align-items: center; /* horizontal*/
+  justify-content: space-around; /* vertical*/
+  flex-direction: column;
+  width: 40%;
+  min-height: 34rem;
+}
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fec120;
+  width: 80%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+.instbuguer-logo{
+  font-size:22px ;
+  font-family: 'Fugaz One', cursive;
+  font-weight: bolder;
+}
+.group:nth-child(1){
+  min-height: 19rem;
+}
+.instbuguer-logo {
+  height: 3rem;
+}
+.profile-photo {
+  display: flex;
+  border: 2px solid #000000;
+  align-items: center;
+  border-radius: 50% ;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.profile-photo img {
+  height: 6rem;
+ 
+}
+.instbuguer-login {
+  background-color: #000000;
+  text-align: center;
+  color: #ffffffff;
+  padding: 8px;
+  border-radius: 4px;
+}
+.instbuguer-logout {
+  color: #000000;
+  margin-top: 1rem;
+}
+
+.not-account {
+  color: #ffffff;
+}
+.link-blue {
+  color:  rgb(150, 12, 12);
+}
+
+.get-the-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+.download{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+.app-download {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+.app-download:nth-child(1){
+  background-image: url('./img/apple-button.png');
+}
+.app-download:nth-child(2){
+  background-image: url('./img/googleplay-button.png');
+}
+.get-app {
+  color: #ffffff;
+}
+
+.instbuguer-footer{
+  text-align: center;
+  background-color: #fec120;
+  padding: 2px;
+  color: #000000;
+  
+}
+/* media queries */
+@media (max-width: 1024px){
+  .instbuguer-wrapper{
+    width: 100%;
+  }
+}
+@media (max-width: 700px){
+  .body{
+    background-color: #ffffffff;
+  }
+  .instbuguer-wrapper{
+    padding-top: 22px ;
+    width: 100%;
+  }
+  .instbuguer-burguer{
+    display: none;
+  }
+  .instburguer-continue{
+    width: 100%;
+  }
+  .group{
+    
+    border: 1px solid transparent;
+    
+  }
+  .instagram-logo{
+    width: 70%;
+  }
+ .group .not-account{
+   text-align: center;
+ }
+}
+.instbuguer-footer p{
+  padding:22px ;
+}
+@media (max-width: 660px){
+ .download{
+   display: flex;
+   flex-direction: column;
+ }
+}
